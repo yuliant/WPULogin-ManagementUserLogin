@@ -24,3 +24,4 @@ commit 10 -> Change password
 commit 11 -> User activation
 commit 12 -> Forgot password
 commit 13 -> Write Readme and add database.sql file
+commit 15 -> Add menu "Kelola User" in admin
