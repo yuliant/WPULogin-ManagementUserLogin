@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2019 at 05:57 AM
+-- Generation Time: Sep 06, 2019 at 03:10 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -44,7 +44,6 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(3, 'MASRIZAL EKA YULIANTO', 'masrizal04@gmail.com', 'logoweb.png', '$2y$10$PANN4muqbC5OeVhvaIMQ9uFI64PG2iEguCHskA9et8oQvhmhnhauu', 2, 1, 1556851751),
 (4, 'yuliant', 'masrizalkasep@gmail.com', 'ruler_chan1.jpg', '$2y$10$t0VxD7/hNe2R29O0ANKfuOdkUdJ7cKUSoHtAlCg6wKeseieRpZsUe', 1, 1, 1556888309),
 (5, 'Masrizal Umsida', 'masrizaleka@umsida.ac.id', 'default.jpg', '$2y$10$cTScDlL/llLPRYW/Sr4dZ.ZSgpLNUQQBPV.BqPQAuTBa5N4nQggWC', 2, 1, 1557142100);
 
@@ -68,7 +67,8 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (1, 1, 1),
 (2, 1, 2),
 (3, 2, 2),
-(9, 1, 3);
+(9, 1, 3),
+(10, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -204,7 +204,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
@@ -216,19 +216,19 @@ ALTER TABLE `user_menu`
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `user_token`
 --
 ALTER TABLE `user_token`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
