@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2019 at 03:10 AM
+-- Generation Time: Nov 04, 2019 at 01:34 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -45,7 +45,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
 (4, 'yuliant', 'masrizalkasep@gmail.com', 'ruler_chan1.jpg', '$2y$10$t0VxD7/hNe2R29O0ANKfuOdkUdJ7cKUSoHtAlCg6wKeseieRpZsUe', 1, 1, 1556888309),
-(5, 'Masrizal Umsida', 'masrizaleka@umsida.ac.id', 'default.jpg', '$2y$10$cTScDlL/llLPRYW/Sr4dZ.ZSgpLNUQQBPV.BqPQAuTBa5N4nQggWC', 2, 1, 1557142100);
+(5, 'Masrizal Umsida', 'masrizaleka@umsida.ac.id', 'dragon_chan.jpg', '$2y$10$cTScDlL/llLPRYW/Sr4dZ.ZSgpLNUQQBPV.BqPQAuTBa5N4nQggWC', 2, 1, 1557142100);
 
 -- --------------------------------------------------------
 
@@ -135,7 +135,8 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (4, 3, 'Menu Management', 'menu', 'fas fa-fw fa-folder', 1),
 (5, 3, 'Submenu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
 (6, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
-(7, 2, 'Change Password', 'user/changepassword', 'fas fa-fw fa-key', 1);
+(7, 2, 'Change Password', 'user/changepassword', 'fas fa-fw fa-key', 1),
+(10, 1, 'Kelola User', 'admin/kelolaUser', 'fas fa-fw fa-users-cog', 1);
 
 -- --------------------------------------------------------
 
@@ -216,13 +217,13 @@ ALTER TABLE `user_menu`
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user_token`
